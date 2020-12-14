@@ -1,0 +1,31 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+//Setup different web browsers(Chrome/Firefox/Edge) to launch then open Google
+public class Lession1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Chrome
+		System.setProperty("webdriver.chrome.driver", 
+				"C:\\_Automation\\_Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+
+		//Firefox
+		//System.setProperty("webdriver.gheko.driver", 
+				//"C:\\_Automation\\_Selenium\\ghekodriver.exe");
+		//WebDriver driver2 = new FirefoxDriver();
+		
+		//Edge
+		//WebDriver driver3 = new EdgeDriver(); Note: I don't have Edge set up
+		
+		//Launches web (i.e. Chrome or Firefox or Edge) then opens Google
+		driver.get("http://google.com");
+		
+
+	}
+
+}
